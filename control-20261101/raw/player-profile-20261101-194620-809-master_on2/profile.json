@@ -1,0 +1,3496 @@
+{
+  "schema_version": 2,
+  "coverage_revision": "scene-stages-and-player-name-tags",
+  "result": "complete",
+  "label": "master_on2",
+  "mode": "stages",
+  "sample_stride": 20,
+  "requested_seconds": 20,
+  "warmup_seconds": 2,
+  "observed_frames": 4677,
+  "sampled_frames": 234,
+  "java": "25.0.4.1+1-LTS",
+  "gpu_timing": "unavailable",
+  "views": "Combined renderFrame scope; separate shadow/GUI/mirror views are not labeled.",
+  "stages": [
+    {
+      "path": "frame",
+      "calls": 234,
+      "inclusive_ms": 1005.9276,
+      "self_ms": 15.509,
+      "max_call_ms": 7.0816,
+      "ms_per_sampled_frame": 4.298835897435898,
+      "percent_sampled_render_frame": 100.0,
+      "percent_sampled_frame_interval": 95.02818506436734
+    },
+    {
+      "path": "frame/surface_acquire_cpu",
+      "calls": 234,
+      "inclusive_ms": 0.045,
+      "self_ms": 0.045,
+      "max_call_ms": 0.0045,
+      "ms_per_sampled_frame": 1.923076923076923E-4,
+      "percent_sampled_render_frame": 0.0044734829822742714,
+      "percent_sampled_frame_interval": 0.004251069687218573
+    },
+    {
+      "path": "frame/scene_extract",
+      "calls": 234,
+      "inclusive_ms": 244.3498,
+      "self_ms": 0.8294,
+      "max_call_ms": 1.7123,
+      "ms_per_sampled_frame": 1.0442299145299145,
+      "percent_sampled_render_frame": 24.290992711602705,
+      "percent_sampled_frame_interval": 23.083289507953797
+    },
+    {
+      "path": "frame/scene_extract/window_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0182,
+      "self_ms": 0.0182,
+      "max_call_ms": 4.0E-4,
+      "ms_per_sampled_frame": 7.777777777777778E-5,
+      "percent_sampled_render_frame": 0.001809275339497594,
+      "percent_sampled_frame_interval": 0.001719321517941734
+    },
+    {
+      "path": "frame/scene_extract/options_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0835,
+      "self_ms": 0.0835,
+      "max_call_ms": 0.0016,
+      "ms_per_sampled_frame": 3.5683760683760684E-4,
+      "percent_sampled_render_frame": 0.00830079620044226,
+      "percent_sampled_frame_interval": 0.007888095975172241
+    },
+    {
+      "path": "frame/scene_extract/lightmap_extract",
+      "calls": 234,
+      "inclusive_ms": 0.1544,
+      "self_ms": 0.1544,
+      "max_call_ms": 0.0127,
+      "ms_per_sampled_frame": 6.598290598290599E-4,
+      "percent_sampled_render_frame": 0.01534901716584772,
+      "percent_sampled_frame_interval": 0.014585892437923282
+    },
+    {
+      "path": "frame/scene_extract/camera_extract",
+      "calls": 234,
+      "inclusive_ms": 1.8787,
+      "self_ms": 1.8787,
+      "max_call_ms": 0.0214,
+      "ms_per_sampled_frame": 0.008028632478632478,
+      "percent_sampled_render_frame": 0.18676294397330384,
+      "percent_sampled_frame_interval": 0.17747743603061186
+    },
+    {
+      "path": "frame/scene_extract/world_extract",
+      "calls": 234,
+      "inclusive_ms": 208.0902,
+      "self_ms": 4.8738,
+      "max_call_ms": 1.493,
+      "ms_per_sampled_frame": 0.889274358974359,
+      "percent_sampled_render_frame": 20.68639929951221,
+      "percent_sampled_frame_interval": 19.657909809494452
+    },
+    {
+      "path": "frame/scene_extract/world_extract/entities_extract",
+      "calls": 234,
+      "inclusive_ms": 135.3218,
+      "self_ms": 126.1055,
+      "max_call_ms": 1.0582,
+      "ms_per_sampled_frame": 0.5782982905982906,
+      "percent_sampled_render_frame": 13.452439320682721,
+      "percent_sampled_frame_interval": 12.783608933330097
+    },
+    {
+      "path": "frame/scene_extract/world_extract/entities_extract/player_extract",
+      "calls": 1929,
+      "inclusive_ms": 9.2163,
+      "self_ms": 9.2163,
+      "max_call_ms": 0.0259,
+      "ms_per_sampled_frame": 0.03938589743589744,
+      "percent_sampled_render_frame": 0.9161991379896526,
+      "percent_sampled_frame_interval": 0.8706474124069453
+    },
+    {
+      "path": "frame/scene_extract/world_extract/block_entities_extract",
+      "calls": 234,
+      "inclusive_ms": 24.409,
+      "self_ms": 24.409,
+      "max_call_ms": 0.2137,
+      "ms_per_sampled_frame": 0.1043119658119658,
+      "percent_sampled_render_frame": 2.4265165803185043,
+      "percent_sampled_frame_interval": 2.3058746665626257
+    },
+    {
+      "path": "frame/scene_extract/world_extract/block_outline_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0424,
+      "self_ms": 0.0424,
+      "max_call_ms": 5.0E-4,
+      "ms_per_sampled_frame": 1.811965811965812E-4,
+      "percent_sampled_render_frame": 0.004215015076631757,
+      "percent_sampled_frame_interval": 0.004005452327512611
+    },
+    {
+      "path": "frame/scene_extract/world_extract/block_damage_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0098,
+      "self_ms": 0.0098,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 4.188034188034188E-5,
+      "percent_sampled_render_frame": 9.742251828063968E-4,
+      "percent_sampled_frame_interval": 9.257885096609338E-4
+    },
+    {
+      "path": "frame/scene_extract/world_extract/particles_extract",
+      "calls": 234,
+      "inclusive_ms": 43.2987,
+      "self_ms": 43.2987,
+      "max_call_ms": 0.3421,
+      "ms_per_sampled_frame": 0.18503717948717946,
+      "percent_sampled_render_frame": 4.304355502324421,
+      "percent_sampled_frame_interval": 4.090350912577129
+    },
+    {
+      "path": "frame/scene_extract/world_extract/gizmos_extract",
+      "calls": 234,
+      "inclusive_ms": 0.1347,
+      "self_ms": 0.1347,
+      "max_call_ms": 0.0017,
+      "ms_per_sampled_frame": 5.756410256410255E-4,
+      "percent_sampled_render_frame": 0.013390625726940985,
+      "percent_sampled_frame_interval": 0.012724868597074262
+    },
+    {
+      "path": "frame/scene_extract/gui_extract",
+      "calls": 234,
+      "inclusive_ms": 33.2954,
+      "self_ms": 0.6097,
+      "max_call_ms": 0.2592,
+      "ms_per_sampled_frame": 0.14228803418803418,
+      "percent_sampled_render_frame": 3.309920117511439,
+      "percent_sampled_frame_interval": 3.1453570147514953
+    },
+    {
+      "path": "frame/scene_extract/gui_extract/hud_extract",
+      "calls": 234,
+      "inclusive_ms": 32.6292,
+      "self_ms": 24.8552,
+      "max_call_ms": 0.2544,
+      "ms_per_sampled_frame": 0.13944102564102562,
+      "percent_sampled_render_frame": 3.2436926872271923,
+      "percent_sampled_frame_interval": 3.082422289737606
+    },
+    {
+      "path": "frame/scene_extract/gui_extract/hud_extract/scoreboard_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0967,
+      "self_ms": 0.0967,
+      "max_call_ms": 0.0019,
+      "ms_per_sampled_frame": 4.132478632478632E-4,
+      "percent_sampled_render_frame": 0.009613017875242711,
+      "percent_sampled_frame_interval": 0.009135076416756356
+    },
+    {
+      "path": "frame/scene_extract/gui_extract/hud_extract/chat_extract",
+      "calls": 234,
+      "inclusive_ms": 7.6327,
+      "self_ms": 7.6327,
+      "max_call_ms": 0.0688,
+      "ms_per_sampled_frame": 0.032618376068376066,
+      "percent_sampled_render_frame": 0.758772301306774,
+      "percent_sampled_frame_interval": 0.7210475467029601
+    },
+    {
+      "path": "frame/scene_extract/gui_extract/hud_extract/tab_list_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0446,
+      "self_ms": 0.0446,
+      "max_call_ms": 5.0E-4,
+      "ms_per_sampled_frame": 1.905982905982906E-4,
+      "percent_sampled_render_frame": 0.004433718689098499,
+      "percent_sampled_frame_interval": 0.0042132824011099634
+    },
+    {
+      "path": "frame/scene_extract/gui_extract/debug_overlay_extract",
+      "calls": 234,
+      "inclusive_ms": 0.0565,
+      "self_ms": 0.0565,
+      "max_call_ms": 0.0015,
+      "ms_per_sampled_frame": 2.4145299145299145E-4,
+      "percent_sampled_render_frame": 0.005616706411077696,
+      "percent_sampled_frame_interval": 0.0053374541628410975
+    },
+    {
+      "path": "frame/pending_render_tasks_cpu",
+      "calls": 234,
+      "inclusive_ms": 0.0236,
+      "self_ms": 0.0236,
+      "max_call_ms": 5.0E-4,
+      "ms_per_sampled_frame": 1.0085470085470085E-4,
+      "percent_sampled_render_frame": 0.0023460932973705067,
+      "percent_sampled_frame_interval": 0.0022294498804079628
+    },
+    {
+      "path": "frame/scene_render",
+      "calls": 234,
+      "inclusive_ms": 688.4489,
+      "self_ms": 17.992,
+      "max_call_ms": 5.0237,
+      "ms_per_sampled_frame": 2.9420893162393162,
+      "percent_sampled_render_frame": 68.43920974034314,
+      "percent_sampled_frame_interval": 65.03653888864379
+    },
+    {
+      "path": "frame/scene_render/lightmap_render_cpu",
+      "calls": 234,
+      "inclusive_ms": 1.0391,
+      "self_ms": 1.0391,
+      "max_call_ms": 0.0691,
+      "ms_per_sampled_frame": 0.00444059829059829,
+      "percent_sampled_render_frame": 0.1032976925973599,
+      "percent_sampled_frame_interval": 0.09816192248864043
+    },
+    {
+      "path": "frame/scene_render/world_view",
+      "calls": 234,
+      "inclusive_ms": 570.6332,
+      "self_ms": 8.058,
+      "max_call_ms": 4.1474,
+      "ms_per_sampled_frame": 2.4386034188034187,
+      "percent_sampled_render_frame": 56.72706465157135,
+      "percent_sampled_frame_interval": 53.906699978678525
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render",
+      "calls": 234,
+      "inclusive_ms": 539.7433,
+      "self_ms": 1.7342,
+      "max_call_ms": 3.9495,
+      "ms_per_sampled_frame": 2.306595299145299,
+      "percent_sampled_render_frame": 53.656277052145704,
+      "percent_sampled_frame_interval": 50.98858625576268
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit",
+      "calls": 234,
+      "inclusive_ms": 79.1593,
+      "self_ms": 1.0604,
+      "max_call_ms": 0.592,
+      "ms_per_sampled_frame": 0.33828760683760684,
+      "percent_sampled_render_frame": 7.869284031972082,
+      "percent_sampled_frame_interval": 7.478037793143138
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit",
+      "calls": 234,
+      "inclusive_ms": 58.981,
+      "self_ms": 16.5419,
+      "max_call_ms": 0.4309,
+      "ms_per_sampled_frame": 0.2520555555555556,
+      "percent_sampled_render_frame": 5.863344439500417,
+      "percent_sampled_frame_interval": 5.571829804929748
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit",
+      "calls": 1929,
+      "inclusive_ms": 42.4391,
+      "self_ms": 14.2317,
+      "max_call_ms": 0.0847,
+      "ms_per_sampled_frame": 0.18136367521367522,
+      "percent_sampled_render_frame": 4.218902036289689,
+      "percent_sampled_frame_interval": 4.009146034729728
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/HumanoidArmorLayer",
+      "calls": 1929,
+      "inclusive_ms": 13.237,
+      "self_ms": 13.237,
+      "max_call_ms": 0.0261,
+      "ms_per_sampled_frame": 0.05656837606837607,
+      "percent_sampled_render_frame": 1.3158998719192116,
+      "percent_sampled_frame_interval": 1.2504757655491612
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/PlayerItemInHandLayer",
+      "calls": 1929,
+      "inclusive_ms": 5.3109,
+      "self_ms": 5.3109,
+      "max_call_ms": 0.035,
+      "ms_per_sampled_frame": 0.02269615384615385,
+      "percent_sampled_render_frame": 0.5279604615680095,
+      "percent_sampled_frame_interval": 0.5017112444855361
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/ArrowLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.4377,
+      "self_ms": 0.4377,
+      "max_call_ms": 0.0044,
+      "ms_per_sampled_frame": 0.0018705128205128204,
+      "percent_sampled_render_frame": 0.04351207780758774,
+      "percent_sampled_frame_interval": 0.04134873782434599
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/Deadmau5EarsLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.4163,
+      "self_ms": 0.4163,
+      "max_call_ms": 0.0029,
+      "ms_per_sampled_frame": 0.001779059829059829,
+      "percent_sampled_render_frame": 0.04138468812268398,
+      "percent_sampled_frame_interval": 0.03932711801753538
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/CapeLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.563,
+      "self_ms": 0.563,
+      "max_call_ms": 0.0066,
+      "ms_per_sampled_frame": 0.0024059829059829055,
+      "percent_sampled_render_frame": 0.0559682426448981,
+      "percent_sampled_frame_interval": 0.05318560519786793
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/CustomHeadLayer",
+      "calls": 1929,
+      "inclusive_ms": 1.9666,
+      "self_ms": 1.9666,
+      "max_call_ms": 0.0143,
+      "ms_per_sampled_frame": 0.008404273504273503,
+      "percent_sampled_render_frame": 0.19550114739867958,
+      "percent_sampled_frame_interval": 0.1857811921529788
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/WingsLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.7617,
+      "self_ms": 0.7617,
+      "max_call_ms": 0.0075,
+      "ms_per_sampled_frame": 0.003255128205128205,
+      "percent_sampled_render_frame": 0.0757211552799625,
+      "percent_sampled_frame_interval": 0.07195643957231972
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/ParrotOnShoulderLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.3745,
+      "self_ms": 0.3745,
+      "max_call_ms": 0.0064,
+      "ms_per_sampled_frame": 0.0016004273504273505,
+      "percent_sampled_render_frame": 0.03722931948581588,
+      "percent_sampled_frame_interval": 0.03537834661918568
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/SpinAttackEffectLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.3412,
+      "self_ms": 0.3412,
+      "max_call_ms": 0.0064,
+      "ms_per_sampled_frame": 0.001458119658119658,
+      "percent_sampled_render_frame": 0.033918942078932916,
+      "percent_sampled_frame_interval": 0.032232555050643937
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/layer_submit/BeeStingerLayer",
+      "calls": 1929,
+      "inclusive_ms": 0.3973,
+      "self_ms": 0.3973,
+      "max_call_ms": 0.0149,
+      "ms_per_sampled_frame": 0.0016978632478632477,
+      "percent_sampled_render_frame": 0.03949588419683484,
+      "percent_sampled_frame_interval": 0.03753222192737642
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/entities_submit/player_submit/player_name_tag_submit",
+      "calls": 1929,
+      "inclusive_ms": 4.4012,
+      "self_ms": 4.4012,
+      "max_call_ms": 0.0206,
+      "ms_per_sampled_frame": 0.01880854700854701,
+      "percent_sampled_render_frame": 0.4375265178130116,
+      "percent_sampled_frame_interval": 0.4157735090530308
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/block_entities_submit",
+      "calls": 234,
+      "inclusive_ms": 19.1011,
+      "self_ms": 19.1011,
+      "max_call_ms": 0.1538,
+      "ms_per_sampled_frame": 0.08162863247863247,
+      "percent_sampled_render_frame": 1.8988543509493128,
+      "percent_sampled_frame_interval": 1.8044468267229041
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/block_damage_submit",
+      "calls": 234,
+      "inclusive_ms": 0.0086,
+      "self_ms": 0.0086,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 3.675213675213675E-5,
+      "percent_sampled_render_frame": 8.549323032790829E-4,
+      "percent_sampled_frame_interval": 8.124266513351051E-4
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/world_feature_submit/block_outline_submit",
+      "calls": 234,
+      "inclusive_ms": 0.0082,
+      "self_ms": 0.0082,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 3.5042735042735046E-5,
+      "percent_sampled_render_frame": 8.151680101033116E-4,
+      "percent_sampled_frame_interval": 7.746393652264956E-4
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare",
+      "calls": 234,
+      "inclusive_ms": 128.4565,
+      "self_ms": 17.682,
+      "max_call_ms": 1.0384,
+      "ms_per_sampled_frame": 0.5489594017094017,
+      "percent_sampled_render_frame": 12.769954815833664,
+      "percent_sampled_frame_interval": 12.135056295026503
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ShadowFeatureRenderer/prepare",
+      "calls": 234,
+      "inclusive_ms": 2.7885,
+      "self_ms": 2.7885,
+      "max_call_ms": 0.0215,
+      "ms_per_sampled_frame": 0.011916666666666667,
+      "percent_sampled_render_frame": 0.27720682880159564,
+      "percent_sampled_frame_interval": 0.26342461828464425
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/CustomFeatureRenderer/prepare",
+      "calls": 234,
+      "inclusive_ms": 0.8342,
+      "self_ms": 0.8342,
+      "max_call_ms": 0.01,
+      "ms_per_sampled_frame": 0.003564957264957265,
+      "percent_sampled_render_frame": 0.08292843341807105,
+      "percent_sampled_frame_interval": 0.0788053851795052
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare",
+      "calls": 468,
+      "inclusive_ms": 17.0439,
+      "self_ms": 15.1079,
+      "max_call_ms": 0.1278,
+      "ms_per_sampled_frame": 0.0728371794871795,
+      "percent_sampled_render_frame": 1.6943465911463211,
+      "percent_sampled_frame_interval": 1.6101068142663253
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/CapeLayer/other_material",
+      "calls": 234,
+      "inclusive_ms": 1.83,
+      "self_ms": 0.5852,
+      "max_call_ms": 0.0189,
+      "ms_per_sampled_frame": 0.00782051282051282,
+      "percent_sampled_render_frame": 0.1819216412791537,
+      "percent_sampled_frame_interval": 0.17287683394688866
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/CapeLayer/other_material/material_buffer",
+      "calls": 234,
+      "inclusive_ms": 0.4227,
+      "self_ms": 0.2574,
+      "max_call_ms": 0.0126,
+      "ms_per_sampled_frame": 0.0018064102564102566,
+      "percent_sampled_render_frame": 0.04202091681349632,
+      "percent_sampled_frame_interval": 0.03993171459527313
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/CapeLayer/other_material/material_buffer/material_match",
+      "calls": 234,
+      "inclusive_ms": 0.1653,
+      "self_ms": 0.1653,
+      "max_call_ms": 0.0029,
+      "ms_per_sampled_frame": 7.064102564102564E-4,
+      "percent_sampled_render_frame": 0.01643259415488749,
+      "percent_sampled_frame_interval": 0.015615595984382892
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/CapeLayer/other_material/setup_animation",
+      "calls": 234,
+      "inclusive_ms": 0.356,
+      "self_ms": 0.356,
+      "max_call_ms": 0.0029,
+      "ms_per_sampled_frame": 0.0015213675213675212,
+      "percent_sampled_render_frame": 0.035390220926436455,
+      "percent_sampled_frame_interval": 0.03363068463666249
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/CapeLayer/other_material/geometry_encode",
+      "calls": 234,
+      "inclusive_ms": 0.4661,
+      "self_ms": 0.4661,
+      "max_call_ms": 0.0038,
+      "ms_per_sampled_frame": 0.001991880341880342,
+      "percent_sampled_render_frame": 0.0463353426230675,
+      "percent_sampled_frame_interval": 0.04403163513805727
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/body/other_material",
+      "calls": 11,
+      "inclusive_ms": 0.106,
+      "self_ms": 0.0176,
+      "max_call_ms": 0.0122,
+      "ms_per_sampled_frame": 4.5299145299145297E-4,
+      "percent_sampled_render_frame": 0.010537537691579394,
+      "percent_sampled_frame_interval": 0.010013630818781528
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/body/other_material/material_buffer",
+      "calls": 11,
+      "inclusive_ms": 0.017,
+      "self_ms": 0.0105,
+      "max_call_ms": 0.0035,
+      "ms_per_sampled_frame": 7.264957264957266E-5,
+      "percent_sampled_render_frame": 0.0016899824599702802,
+      "percent_sampled_frame_interval": 0.0016059596596159054
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/body/other_material/material_buffer/material_match",
+      "calls": 11,
+      "inclusive_ms": 0.0065,
+      "self_ms": 0.0065,
+      "max_call_ms": 7.0E-4,
+      "ms_per_sampled_frame": 2.7777777777777776E-5,
+      "percent_sampled_render_frame": 6.461697641062836E-4,
+      "percent_sampled_frame_interval": 6.14043399264905E-4
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/body/other_material/setup_animation",
+      "calls": 11,
+      "inclusive_ms": 0.0084,
+      "self_ms": 0.0084,
+      "max_call_ms": 0.0011,
+      "ms_per_sampled_frame": 3.5897435897435896E-5,
+      "percent_sampled_render_frame": 8.350501566911973E-4,
+      "percent_sampled_frame_interval": 7.935330082808003E-4
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ModelFeatureRenderer/prepare/player_model/body/other_material/geometry_encode",
+      "calls": 11,
+      "inclusive_ms": 0.063,
+      "self_ms": 0.063,
+      "max_call_ms": 0.0063,
+      "ms_per_sampled_frame": 2.692307692307692E-4,
+      "percent_sampled_render_frame": 0.00626287617518398,
+      "percent_sampled_frame_interval": 0.005951497562106002
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/TextFeatureRenderer/prepare",
+      "calls": 468,
+      "inclusive_ms": 8.0369,
+      "self_ms": 8.0369,
+      "max_call_ms": 0.0485,
+      "ms_per_sampled_frame": 0.034345726495726495,
+      "percent_sampled_render_frame": 0.7989541195608909,
+      "percent_sampled_frame_interval": 0.75923159931571
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare",
+      "calls": 468,
+      "inclusive_ms": 29.1974,
+      "self_ms": 23.4111,
+      "max_call_ms": 0.2154,
+      "ms_per_sampled_frame": 0.12477521367521367,
+      "percent_sampled_render_frame": 2.9025349339256623,
+      "percent_sampled_frame_interval": 2.7582262685687904
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/PlayerItemInHandLayer",
+      "calls": 468,
+      "inclusive_ms": 3.8293,
+      "self_ms": 0.3003,
+      "max_call_ms": 0.0192,
+      "ms_per_sampled_frame": 0.016364529914529913,
+      "percent_sampled_render_frame": 0.38067351964495255,
+      "percent_sampled_frame_interval": 0.3617471367392463
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/PlayerItemInHandLayer/main_encode",
+      "calls": 234,
+      "inclusive_ms": 1.4348,
+      "self_ms": 1.3072,
+      "max_call_ms": 0.0164,
+      "ms_per_sampled_frame": 0.006131623931623932,
+      "percent_sampled_render_frame": 0.14263451962149165,
+      "percent_sampled_frame_interval": 0.13554299527158242
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/PlayerItemInHandLayer/main_encode/material_match",
+      "calls": 234,
+      "inclusive_ms": 0.1276,
+      "self_ms": 0.1276,
+      "max_call_ms": 0.0106,
+      "ms_per_sampled_frame": 5.452991452991453E-4,
+      "percent_sampled_render_frame": 0.012684809523071045,
+      "percent_sampled_frame_interval": 0.012054144268646443
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/CustomHeadLayer",
+      "calls": 468,
+      "inclusive_ms": 1.957,
+      "self_ms": 0.4044,
+      "max_call_ms": 0.0163,
+      "ms_per_sampled_frame": 0.008363247863247863,
+      "percent_sampled_render_frame": 0.19454680436246108,
+      "percent_sampled_frame_interval": 0.18487429728637217
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/CustomHeadLayer/main_encode",
+      "calls": 234,
+      "inclusive_ms": 1.5441,
+      "self_ms": 1.3865,
+      "max_call_ms": 0.0149,
+      "ms_per_sampled_frame": 0.006598717948717948,
+      "percent_sampled_render_frame": 0.15350011273177117,
+      "percent_sampled_frame_interval": 0.14586837120076
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/CustomHeadLayer/main_encode/material_match",
+      "calls": 376,
+      "inclusive_ms": 0.1576,
+      "self_ms": 0.1576,
+      "max_call_ms": 0.0026,
+      "ms_per_sampled_frame": 6.735042735042735E-4,
+      "percent_sampled_render_frame": 0.01566713151125389,
+      "percent_sampled_frame_interval": 0.014888190726792159
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/PlayerItemInHandLayer/glint_encode",
+      "calls": 234,
+      "inclusive_ms": 2.0942,
+      "self_ms": 1.3907,
+      "max_call_ms": 0.0184,
+      "ms_per_sampled_frame": 0.008949572649572649,
+      "percent_sampled_render_frame": 0.20818595692175063,
+      "percent_sampled_frame_interval": 0.19783533642162524
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/PlayerItemInHandLayer/glint_encode/material_match",
+      "calls": 234,
+      "inclusive_ms": 0.7035,
+      "self_ms": 0.7035,
+      "max_call_ms": 0.0127,
+      "ms_per_sampled_frame": 0.0030064102564102565,
+      "percent_sampled_render_frame": 0.06993545062288777,
+      "percent_sampled_frame_interval": 0.06645838944351704
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/ItemFeatureRenderer/prepare/player_item/CustomHeadLayer/glint_encode",
+      "calls": 234,
+      "inclusive_ms": 0.0085,
+      "self_ms": 0.0085,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 3.632478632478633E-5,
+      "percent_sampled_render_frame": 8.449912299851401E-4,
+      "percent_sampled_frame_interval": 8.029798298079527E-4
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/NameTagFeatureRenderer/prepare",
+      "calls": 468,
+      "inclusive_ms": 29.6127,
+      "self_ms": 16.8766,
+      "max_call_ms": 0.1467,
+      "ms_per_sampled_frame": 0.12655,
+      "percent_sampled_render_frame": 2.9438202113154066,
+      "percent_sampled_frame_interval": 2.7974589183710545
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/NameTagFeatureRenderer/prepare/player_name_tag/text_prepare",
+      "calls": 3853,
+      "inclusive_ms": 8.0941,
+      "self_ms": 8.0941,
+      "max_call_ms": 0.0185,
+      "ms_per_sampled_frame": 0.03459017094017094,
+      "percent_sampled_render_frame": 0.8046404134850261,
+      "percent_sampled_frame_interval": 0.7646351812292412
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/features/NameTagFeatureRenderer/prepare/player_name_tag/glyph_encode",
+      "calls": 3853,
+      "inclusive_ms": 4.642,
+      "self_ms": 4.642,
+      "max_call_ms": 0.0131,
+      "ms_per_sampled_frame": 0.01983760683760684,
+      "percent_sampled_render_frame": 0.46146462230482593,
+      "percent_sampled_frame_interval": 0.4385214552904137
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_prepare/shared_staged_upload",
+      "calls": 234,
+      "inclusive_ms": 23.2609,
+      "self_ms": 23.2609,
+      "max_call_ms": 0.1764,
+      "ms_per_sampled_frame": 0.09940555555555555,
+      "percent_sampled_render_frame": 2.3123831178307466,
+      "percent_sampled_frame_interval": 2.1974157086093893
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/terrain_prepare",
+      "calls": 234,
+      "inclusive_ms": 0.0502,
+      "self_ms": 0.0502,
+      "max_call_ms": 0.0019,
+      "ms_per_sampled_frame": 2.1452991452991453E-4,
+      "percent_sampled_render_frame": 0.004990418793559298,
+      "percent_sampled_frame_interval": 0.004742304406630498
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu",
+      "calls": 234,
+      "inclusive_ms": 329.0759,
+      "self_ms": 2.6906,
+      "max_call_ms": 2.2981,
+      "ms_per_sampled_frame": 1.406307264957265,
+      "percent_sampled_render_frame": 32.713676411702,
+      "percent_sampled_frame_interval": 31.087212961870456
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/clear",
+      "calls": 234,
+      "inclusive_ms": 9.6562,
+      "self_ms": 9.6562,
+      "max_call_ms": 0.105,
+      "ms_per_sampled_frame": 0.041265811965811965,
+      "percent_sampled_render_frame": 0.9599299194097071,
+      "percent_sampled_frame_interval": 0.9122039803048886
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/sky",
+      "calls": 234,
+      "inclusive_ms": 36.7071,
+      "self_ms": 36.7071,
+      "max_call_ms": 0.291,
+      "ms_per_sampled_frame": 0.1568679487179487,
+      "percent_sampled_render_frame": 3.6490797150808865,
+      "percent_sampled_frame_interval": 3.4676542247933533
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main",
+      "calls": 234,
+      "inclusive_ms": 265.4264,
+      "self_ms": 89.1467,
+      "max_call_ms": 1.8174,
+      "ms_per_sampled_frame": 1.1343008547008546,
+      "percent_sampled_render_frame": 26.38623296547386,
+      "percent_sampled_frame_interval": 25.074358293945597
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/terrain_draw_cpu",
+      "calls": 468,
+      "inclusive_ms": 68.2132,
+      "self_ms": 68.2132,
+      "max_call_ms": 0.3152,
+      "ms_per_sampled_frame": 0.2915094017094017,
+      "percent_sampled_render_frame": 6.781124208143806,
+      "percent_sampled_frame_interval": 6.443979261959511
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_solid",
+      "calls": 234,
+      "inclusive_ms": 39.0271,
+      "self_ms": 7.499,
+      "max_call_ms": 0.2929,
+      "ms_per_sampled_frame": 0.1667824786324786,
+      "percent_sampled_render_frame": 3.87971261550036,
+      "percent_sampled_frame_interval": 3.6868204842232886
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_solid/features/ItemFeatureRenderer/execute/unattributed",
+      "calls": 234,
+      "inclusive_ms": 7.9417,
+      "self_ms": 0.2877,
+      "max_call_ms": 0.0621,
+      "ms_per_sampled_frame": 0.033938888888888886,
+      "percent_sampled_render_frame": 0.7894902177850573,
+      "percent_sampled_frame_interval": 0.750238225221861
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_solid/features/ItemFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 234,
+      "inclusive_ms": 7.654,
+      "self_ms": 7.654,
+      "max_call_ms": 0.0609,
+      "ms_per_sampled_frame": 0.03270940170940171,
+      "percent_sampled_render_frame": 0.7608897499183838,
+      "percent_sampled_frame_interval": 0.7230597196882436
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_solid/features/ModelFeatureRenderer/execute/mixed",
+      "calls": 234,
+      "inclusive_ms": 23.5864,
+      "self_ms": 0.616,
+      "max_call_ms": 0.1792,
+      "ms_per_sampled_frame": 0.1007965811965812,
+      "percent_sampled_render_frame": 2.3447413114025304,
+      "percent_sampled_frame_interval": 2.22816511268027
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_solid/features/ModelFeatureRenderer/execute/mixed/draw_cpu/mixed",
+      "calls": 936,
+      "inclusive_ms": 22.9704,
+      "self_ms": 22.9704,
+      "max_call_ms": 0.0657,
+      "ms_per_sampled_frame": 0.09816410256410257,
+      "percent_sampled_render_frame": 2.2835042999118427,
+      "percent_sampled_frame_interval": 2.1699726920730114
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent",
+      "calls": 234,
+      "inclusive_ms": 61.1706,
+      "self_ms": 2.6148,
+      "max_call_ms": 0.444,
+      "ms_per_sampled_frame": 0.2614128205128205,
+      "percent_sampled_render_frame": 6.08101418034459,
+      "percent_sampled_frame_interval": 5.778677409088277
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ShadowFeatureRenderer/execute/unattributed",
+      "calls": 234,
+      "inclusive_ms": 8.1559,
+      "self_ms": 0.2172,
+      "max_call_ms": 0.061,
+      "ms_per_sampled_frame": 0.03485427350427351,
+      "percent_sampled_render_frame": 0.8107839967806828,
+      "percent_sampled_frame_interval": 0.7704733169330213
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ShadowFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 234,
+      "inclusive_ms": 7.9387,
+      "self_ms": 7.9387,
+      "max_call_ms": 0.0601,
+      "ms_per_sampled_frame": 0.033926068376068375,
+      "percent_sampled_render_frame": 0.789191985586239,
+      "percent_sampled_frame_interval": 0.7499548205760463
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ModelFeatureRenderer/execute/mixed",
+      "calls": 11,
+      "inclusive_ms": 0.5681,
+      "self_ms": 0.0141,
+      "max_call_ms": 0.0536,
+      "ms_per_sampled_frame": 0.002427777777777778,
+      "percent_sampled_render_frame": 0.05647523738288918,
+      "percent_sampled_frame_interval": 0.0536673930957527
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ModelFeatureRenderer/execute/mixed/draw_cpu/mixed",
+      "calls": 22,
+      "inclusive_ms": 0.554,
+      "self_ms": 0.554,
+      "max_call_ms": 0.027,
+      "ms_per_sampled_frame": 0.0023675213675213675,
+      "percent_sampled_render_frame": 0.05507354604844325,
+      "percent_sampled_frame_interval": 0.05233539126042421
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/NameTagFeatureRenderer/execute/mixed",
+      "calls": 468,
+      "inclusive_ms": 12.2081,
+      "self_ms": 0.3372,
+      "max_call_ms": 0.0547,
+      "ms_per_sampled_frame": 0.05217136752136752,
+      "percent_sampled_render_frame": 1.213616168797834,
+      "percent_sampled_frame_interval": 1.1532774188562904
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/NameTagFeatureRenderer/execute/mixed/draw_cpu/mixed",
+      "calls": 468,
+      "inclusive_ms": 11.8709,
+      "self_ms": 11.8709,
+      "max_call_ms": 0.0542,
+      "ms_per_sampled_frame": 0.05073034188034188,
+      "percent_sampled_render_frame": 1.1800948696506588,
+      "percent_sampled_frame_interval": 1.1214227366667324
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/TextFeatureRenderer/execute/unattributed",
+      "calls": 468,
+      "inclusive_ms": 6.4951,
+      "self_ms": 0.2455,
+      "max_call_ms": 0.0941,
+      "ms_per_sampled_frame": 0.027756837606837607,
+      "percent_sampled_render_frame": 0.6456826515148804,
+      "percent_sampled_frame_interval": 0.6135805050100746
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/CustomFeatureRenderer/execute/unattributed",
+      "calls": 234,
+      "inclusive_ms": 6.2537,
+      "self_ms": 0.1472,
+      "max_call_ms": 0.0586,
+      "ms_per_sampled_frame": 0.026725213675213678,
+      "percent_sampled_render_frame": 0.6216849005833024,
+      "percent_sampled_frame_interval": 0.5907758778435287
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/CustomFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 234,
+      "inclusive_ms": 6.1065,
+      "self_ms": 6.1065,
+      "max_call_ms": 0.0576,
+      "ms_per_sampled_frame": 0.026096153846153845,
+      "percent_sampled_render_frame": 0.6070516406946186,
+      "percent_sampled_frame_interval": 0.5768701565555604
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/TextFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 234,
+      "inclusive_ms": 6.2496,
+      "self_ms": 6.2496,
+      "max_call_ms": 0.0929,
+      "ms_per_sampled_frame": 0.026707692307692307,
+      "percent_sampled_render_frame": 0.6212773165782508,
+      "percent_sampled_frame_interval": 0.5903885581609155
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ItemFeatureRenderer/execute/mixed",
+      "calls": 234,
+      "inclusive_ms": 18.4965,
+      "self_ms": 0.4568,
+      "max_call_ms": 0.1398,
+      "ms_per_sampled_frame": 0.0790448717948718,
+      "percent_sampled_render_frame": 1.8387506218141345,
+      "percent_sampled_frame_interval": 1.7473313437697409
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ItemFeatureRenderer/execute/mixed/draw_cpu/mixed",
+      "calls": 702,
+      "inclusive_ms": 18.0397,
+      "self_ms": 18.0397,
+      "max_call_ms": 0.075,
+      "ms_per_sampled_frame": 0.07709273504273505,
+      "percent_sampled_render_frame": 1.7933397990074038,
+      "percent_sampled_frame_interval": 1.7041782630337088
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_outline",
+      "calls": 234,
+      "inclusive_ms": 0.0512,
+      "self_ms": 0.0512,
+      "max_call_ms": 3.0E-4,
+      "ms_per_sampled_frame": 2.188034188034188E-4,
+      "percent_sampled_render_frame": 0.005089829526498726,
+      "percent_sampled_frame_interval": 0.004836772621902021
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_after_terrain",
+      "calls": 234,
+      "inclusive_ms": 7.8176,
+      "self_ms": 7.8176,
+      "max_call_ms": 0.2467,
+      "ms_per_sampled_frame": 0.03340854700854701,
+      "percent_sampled_render_frame": 0.7771533458272742,
+      "percent_sampled_frame_interval": 0.7385147197066648
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/clouds",
+      "calls": 234,
+      "inclusive_ms": 14.454,
+      "self_ms": 14.454,
+      "max_call_ms": 0.1218,
+      "ms_per_sampled_frame": 0.06176923076923077,
+      "percent_sampled_render_frame": 1.4368827339064958,
+      "percent_sampled_frame_interval": 1.3654435835346057
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/weather",
+      "calls": 234,
+      "inclusive_ms": 0.1416,
+      "self_ms": 0.1416,
+      "max_call_ms": 0.003,
+      "ms_per_sampled_frame": 6.051282051282051E-4,
+      "percent_sampled_render_frame": 0.01407655978422304,
+      "percent_sampled_frame_interval": 0.013376699282447778
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/feature_frame_release",
+      "calls": 234,
+      "inclusive_ms": 0.937,
+      "self_ms": 0.937,
+      "max_call_ms": 0.0115,
+      "ms_per_sampled_frame": 0.004004273504273505,
+      "percent_sampled_render_frame": 0.09314785676424427,
+      "percent_sampled_frame_interval": 0.08851671770941785
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/terrain_compile_cpu",
+      "calls": 234,
+      "inclusive_ms": 0.2029,
+      "self_ms": 0.1899,
+      "max_call_ms": 0.0064,
+      "ms_per_sampled_frame": 8.670940170940171E-4,
+      "percent_sampled_render_frame": 0.02017043771340999,
+      "percent_sampled_frame_interval": 0.01916760087859219
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/terrain_compile_cpu/terrain_translucency_sort",
+      "calls": 234,
+      "inclusive_ms": 0.013,
+      "self_ms": 0.013,
+      "max_call_ms": 3.0E-4,
+      "ms_per_sampled_frame": 5.555555555555555E-5,
+      "percent_sampled_render_frame": 0.0012923395282125672,
+      "percent_sampled_frame_interval": 0.00122808679852981
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/terrain_occlusion_update",
+      "calls": 234,
+      "inclusive_ms": 0.1273,
+      "self_ms": 0.1273,
+      "max_call_ms": 0.0016,
+      "ms_per_sampled_frame": 5.44017094017094E-4,
+      "percent_sampled_render_frame": 0.012654986303189215,
+      "percent_sampled_frame_interval": 0.012025803804064986
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render",
+      "calls": 234,
+      "inclusive_ms": 20.724,
+      "self_ms": 1.8439,
+      "max_call_ms": 0.2217,
+      "ms_per_sampled_frame": 0.08856410256410256,
+      "percent_sampled_render_frame": 2.060188029436711,
+      "percent_sampled_frame_interval": 1.9577592932870602
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all",
+      "calls": 234,
+      "inclusive_ms": 18.8801,
+      "self_ms": 0.8198,
+      "max_call_ms": 0.2031,
+      "ms_per_sampled_frame": 0.08068418803418803,
+      "percent_sampled_render_frame": 1.8768845789696993,
+      "percent_sampled_frame_interval": 1.7835693511478974
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_frame_prepare",
+      "calls": 234,
+      "inclusive_ms": 6.0422,
+      "self_ms": 1.6838,
+      "max_call_ms": 0.0712,
+      "ms_per_sampled_frame": 0.025821367521367523,
+      "percent_sampled_render_frame": 0.6006595305666134,
+      "percent_sampled_frame_interval": 0.5707958503136014
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_frame_prepare/features/ModelFeatureRenderer/prepare",
+      "calls": 234,
+      "inclusive_ms": 1.9494,
+      "self_ms": 1.9494,
+      "max_call_ms": 0.0206,
+      "ms_per_sampled_frame": 0.00833076923076923,
+      "percent_sampled_render_frame": 0.19379128279212143,
+      "percent_sampled_frame_interval": 0.1841563388503086
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_frame_prepare/shared_staged_upload",
+      "calls": 234,
+      "inclusive_ms": 2.409,
+      "self_ms": 2.409,
+      "max_call_ms": 0.0279,
+      "ms_per_sampled_frame": 0.010294871794871794,
+      "percent_sampled_render_frame": 0.23948045565108264,
+      "percent_sampled_frame_interval": 0.22757393058910097
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_solid",
+      "calls": 234,
+      "inclusive_ms": 0.1446,
+      "self_ms": 0.1446,
+      "max_call_ms": 0.0064,
+      "ms_per_sampled_frame": 6.17948717948718E-4,
+      "percent_sampled_render_frame": 0.014374791983041325,
+      "percent_sampled_frame_interval": 0.013660103928262349
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_translucent",
+      "calls": 234,
+      "inclusive_ms": 11.3144,
+      "self_ms": 0.6786,
+      "max_call_ms": 0.1291,
+      "ms_per_sampled_frame": 0.048352136752136746,
+      "percent_sampled_render_frame": 1.1247727967698669,
+      "percent_sampled_frame_interval": 1.0688511748681295
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_translucent/features/ModelFeatureRenderer/execute/unattributed",
+      "calls": 234,
+      "inclusive_ms": 10.6358,
+      "self_ms": 0.2159,
+      "max_call_ms": 0.1229,
+      "ms_per_sampled_frame": 0.04545213675213675,
+      "percent_sampled_render_frame": 1.057312673397171,
+      "percent_sampled_frame_interval": 1.0047450439848733
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_translucent/features/ModelFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 234,
+      "inclusive_ms": 10.4199,
+      "self_ms": 10.4199,
+      "max_call_ms": 0.1209,
+      "ms_per_sampled_frame": 0.04452948717948718,
+      "percent_sampled_render_frame": 1.0358498961555485,
+      "percent_sampled_frame_interval": 0.9843493563077513
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_after_terrain",
+      "calls": 234,
+      "inclusive_ms": 0.028,
+      "self_ms": 0.028,
+      "max_call_ms": 5.0E-4,
+      "ms_per_sampled_frame": 1.1965811965811966E-4,
+      "percent_sampled_render_frame": 0.002783500522303991,
+      "percent_sampled_frame_interval": 0.002645110027602668
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_execute_on_top",
+      "calls": 234,
+      "inclusive_ms": 0.0259,
+      "self_ms": 0.0259,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 1.1068376068376067E-4,
+      "percent_sampled_render_frame": 0.0025747379831311916,
+      "percent_sampled_frame_interval": 0.002446726775532468
+    },
+    {
+      "path": "frame/scene_render/world_view/hand_render/feature_render_all/feature_frame_release",
+      "calls": 234,
+      "inclusive_ms": 0.5052,
+      "self_ms": 0.5052,
+      "max_call_ms": 0.005,
+      "ms_per_sampled_frame": 0.002158974358974359,
+      "percent_sampled_render_frame": 0.05022230228099915,
+      "percent_sampled_frame_interval": 0.04772534235517385
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all",
+      "calls": 234,
+      "inclusive_ms": 2.1079,
+      "self_ms": 0.5532,
+      "max_call_ms": 0.0232,
+      "ms_per_sampled_frame": 0.009008119658119658,
+      "percent_sampled_render_frame": 0.2095478839630208,
+      "percent_sampled_frame_interval": 0.19912955097084512
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_frame_prepare",
+      "calls": 234,
+      "inclusive_ms": 1.332,
+      "self_ms": 1.3033,
+      "max_call_ms": 0.0192,
+      "ms_per_sampled_frame": 0.005692307692307693,
+      "percent_sampled_render_frame": 0.13241509627531842,
+      "percent_sampled_frame_interval": 0.12583166274166976
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_frame_prepare/shared_staged_upload",
+      "calls": 234,
+      "inclusive_ms": 0.0287,
+      "self_ms": 0.0287,
+      "max_call_ms": 3.0E-4,
+      "ms_per_sampled_frame": 1.2264957264957266E-4,
+      "percent_sampled_render_frame": 0.0028530880353615905,
+      "percent_sampled_frame_interval": 0.0027112377782927345
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_execute_solid",
+      "calls": 234,
+      "inclusive_ms": 0.0196,
+      "self_ms": 0.0196,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 8.376068376068376E-5,
+      "percent_sampled_render_frame": 0.0019484503656127935,
+      "percent_sampled_frame_interval": 0.0018515770193218675
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_execute_translucent",
+      "calls": 234,
+      "inclusive_ms": 0.0178,
+      "self_ms": 0.0178,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 7.606837606837607E-5,
+      "percent_sampled_render_frame": 0.0017695110463218228,
+      "percent_sampled_frame_interval": 0.0016815342318331245
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_execute_after_terrain",
+      "calls": 234,
+      "inclusive_ms": 0.0115,
+      "self_ms": 0.0115,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 4.9145299145299147E-5,
+      "percent_sampled_render_frame": 0.001143223428803425,
+      "percent_sampled_frame_interval": 0.0010863844756225244
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_execute_on_top",
+      "calls": 234,
+      "inclusive_ms": 0.0118,
+      "self_ms": 0.0118,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 5.0427350427350424E-5,
+      "percent_sampled_render_frame": 0.0011730466486852534,
+      "percent_sampled_frame_interval": 0.0011147249402039814
+    },
+    {
+      "path": "frame/scene_render/world_view/feature_render_all/feature_frame_release",
+      "calls": 234,
+      "inclusive_ms": 0.162,
+      "self_ms": 0.162,
+      "max_call_ms": 0.0011,
+      "ms_per_sampled_frame": 6.923076923076924E-4,
+      "percent_sampled_render_frame": 0.016104538736187377,
+      "percent_sampled_frame_interval": 0.015303850873986865
+    },
+    {
+      "path": "frame/scene_render/world_screenshot_check",
+      "calls": 234,
+      "inclusive_ms": 0.01,
+      "self_ms": 0.01,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 4.2735042735042735E-5,
+      "percent_sampled_render_frame": 9.941073293942824E-4,
+      "percent_sampled_frame_interval": 9.446821527152385E-4
+    },
+    {
+      "path": "frame/scene_render/entity_outline_postprocess",
+      "calls": 234,
+      "inclusive_ms": 6.6663,
+      "self_ms": 6.6663,
+      "max_call_ms": 0.0474,
+      "ms_per_sampled_frame": 0.028488461538461535,
+      "percent_sampled_render_frame": 0.6627017689941105,
+      "percent_sampled_frame_interval": 0.6297534634645594
+    },
+    {
+      "path": "frame/scene_render/gui_render",
+      "calls": 234,
+      "inclusive_ms": 91.9166,
+      "self_ms": 3.2594,
+      "max_call_ms": 0.7075,
+      "ms_per_sampled_frame": 0.3928059829059829,
+      "percent_sampled_render_frame": 9.13749657530025,
+      "percent_sampled_frame_interval": 8.68319715582655
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare",
+      "calls": 234,
+      "inclusive_ms": 59.4356,
+      "self_ms": 5.1966,
+      "max_call_ms": 0.4742,
+      "ms_per_sampled_frame": 0.2539982905982906,
+      "percent_sampled_render_frame": 5.908536558694681,
+      "percent_sampled_frame_interval": 5.614775055592183
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_pictures_prepare",
+      "calls": 234,
+      "inclusive_ms": 0.7505,
+      "self_ms": 0.7505,
+      "max_call_ms": 0.0092,
+      "ms_per_sampled_frame": 0.003207264957264957,
+      "percent_sampled_render_frame": 0.0746077550710409,
+      "percent_sampled_frame_interval": 0.07089839556127865
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare",
+      "calls": 234,
+      "inclusive_ms": 34.8142,
+      "self_ms": 7.1229,
+      "max_call_ms": 0.2728,
+      "ms_per_sampled_frame": 0.1487786324786325,
+      "percent_sampled_render_frame": 3.4609051386998426,
+      "percent_sampled_frame_interval": 3.288835340105886
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all",
+      "calls": 234,
+      "inclusive_ms": 27.6913,
+      "self_ms": 0.6411,
+      "max_call_ms": 0.2304,
+      "ms_per_sampled_frame": 0.11833888888888888,
+      "percent_sampled_render_frame": 2.7528124290455893,
+      "percent_sampled_frame_interval": 2.6159476895483484
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_frame_prepare",
+      "calls": 234,
+      "inclusive_ms": 10.153,
+      "self_ms": 1.5316,
+      "max_call_ms": 0.0811,
+      "ms_per_sampled_frame": 0.043388888888888894,
+      "percent_sampled_render_frame": 1.009317171534015,
+      "percent_sampled_frame_interval": 0.9591357896517817
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_frame_prepare/features/ItemFeatureRenderer/prepare",
+      "calls": 234,
+      "inclusive_ms": 7.3211,
+      "self_ms": 7.3211,
+      "max_call_ms": 0.0655,
+      "ms_per_sampled_frame": 0.03128675213675214,
+      "percent_sampled_render_frame": 0.7277959169228482,
+      "percent_sampled_frame_interval": 0.6916112508243533
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_frame_prepare/shared_staged_upload",
+      "calls": 234,
+      "inclusive_ms": 1.3003,
+      "self_ms": 1.3003,
+      "max_call_ms": 0.0166,
+      "ms_per_sampled_frame": 0.005556837606837607,
+      "percent_sampled_render_frame": 0.12926377604113853,
+      "percent_sampled_frame_interval": 0.12283702031756247
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_solid",
+      "calls": 234,
+      "inclusive_ms": 16.3876,
+      "self_ms": 0.3257,
+      "max_call_ms": 0.1592,
+      "ms_per_sampled_frame": 0.07003247863247863,
+      "percent_sampled_render_frame": 1.6291033271181743,
+      "percent_sampled_frame_interval": 1.5481073245836243
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_solid/features/ItemFeatureRenderer/execute/unattributed",
+      "calls": 234,
+      "inclusive_ms": 16.0619,
+      "self_ms": 0.3782,
+      "max_call_ms": 0.1572,
+      "ms_per_sampled_frame": 0.06864059829059829,
+      "percent_sampled_render_frame": 1.5967252513998025,
+      "percent_sampled_frame_interval": 1.517339026869689
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_solid/features/ItemFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 468,
+      "inclusive_ms": 15.6837,
+      "self_ms": 15.6837,
+      "max_call_ms": 0.0991,
+      "ms_per_sampled_frame": 0.06702435897435897,
+      "percent_sampled_render_frame": 1.5591281122021108,
+      "percent_sampled_frame_interval": 1.4816111478539986
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_translucent",
+      "calls": 234,
+      "inclusive_ms": 0.1403,
+      "self_ms": 0.1403,
+      "max_call_ms": 0.0016,
+      "ms_per_sampled_frame": 5.995726495726496E-4,
+      "percent_sampled_render_frame": 0.013947325831401782,
+      "percent_sampled_frame_interval": 0.013253890602594796
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_after_terrain",
+      "calls": 234,
+      "inclusive_ms": 0.0192,
+      "self_ms": 0.0192,
+      "max_call_ms": 2.0E-4,
+      "ms_per_sampled_frame": 8.205128205128205E-5,
+      "percent_sampled_render_frame": 0.0019086860724370222,
+      "percent_sampled_frame_interval": 0.001813789733213258
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_execute_on_top",
+      "calls": 234,
+      "inclusive_ms": 0.0162,
+      "self_ms": 0.0162,
+      "max_call_ms": 1.0E-4,
+      "ms_per_sampled_frame": 6.923076923076922E-5,
+      "percent_sampled_render_frame": 0.0016104538736187377,
+      "percent_sampled_frame_interval": 0.0015303850873986864
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_items_prepare/feature_render_all/feature_frame_release",
+      "calls": 234,
+      "inclusive_ms": 0.3339,
+      "self_ms": 0.3339,
+      "max_call_ms": 0.0059,
+      "ms_per_sampled_frame": 0.0014269230769230767,
+      "percent_sampled_render_frame": 0.03319324372847509,
+      "percent_sampled_frame_interval": 0.031542937079161816
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_text_prepare",
+      "calls": 234,
+      "inclusive_ms": 2.5492,
+      "self_ms": 2.5492,
+      "max_call_ms": 0.0416,
+      "ms_per_sampled_frame": 0.010894017094017093,
+      "percent_sampled_render_frame": 0.25341784040919046,
+      "percent_sampled_frame_interval": 0.2408183743701686
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_prepare/gui_mesh_encode",
+      "calls": 468,
+      "inclusive_ms": 16.1251,
+      "self_ms": 16.1251,
+      "max_call_ms": 0.1672,
+      "ms_per_sampled_frame": 0.06891068376068377,
+      "percent_sampled_render_frame": 1.6030080097215744,
+      "percent_sampled_frame_interval": 1.5233094180748492
+    },
+    {
+      "path": "frame/scene_render/gui_render/shared_staged_upload",
+      "calls": 234,
+      "inclusive_ms": 3.1654,
+      "self_ms": 3.1654,
+      "max_call_ms": 0.0634,
+      "ms_per_sampled_frame": 0.013527350427350428,
+      "percent_sampled_render_frame": 0.3146747340464662,
+      "percent_sampled_frame_interval": 0.29902968862048157
+    },
+    {
+      "path": "frame/scene_render/gui_render/gui_draw_cpu",
+      "calls": 234,
+      "inclusive_ms": 26.0562,
+      "self_ms": 26.0562,
+      "max_call_ms": 0.2151,
+      "ms_per_sampled_frame": 0.11135128205128206,
+      "percent_sampled_render_frame": 2.59026593961633,
+      "percent_sampled_frame_interval": 2.46148271075788
+    },
+    {
+      "path": "frame/scene_render/gui_end_frame",
+      "calls": 234,
+      "inclusive_ms": 0.1917,
+      "self_ms": 0.1917,
+      "max_call_ms": 0.0064,
+      "ms_per_sampled_frame": 8.192307692307693E-4,
+      "percent_sampled_render_frame": 0.019057037504488394,
+      "percent_sampled_frame_interval": 0.018109556867551124
+    },
+    {
+      "path": "frame/shared_command_submit_cpu",
+      "calls": 234,
+      "inclusive_ms": 5.1272,
+      "self_ms": 5.1272,
+      "max_call_ms": 0.0351,
+      "ms_per_sampled_frame": 0.02191111111111111,
+      "percent_sampled_render_frame": 0.5096987099270365,
+      "percent_sampled_frame_interval": 0.4843574333401571
+    },
+    {
+      "path": "frame/presentation_cpu_wait",
+      "calls": 234,
+      "inclusive_ms": 52.4241,
+      "self_ms": 52.4241,
+      "max_call_ms": 0.3483,
+      "ms_per_sampled_frame": 0.2240346153846154,
+      "percent_sampled_render_frame": 5.21151820468988,
+      "percent_sampled_frame_interval": 4.952411164215894
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ModelFeatureRenderer/execute/unattributed",
+      "calls": 223,
+      "inclusive_ms": 6.3784,
+      "self_ms": 0.1882,
+      "max_call_ms": 0.0882,
+      "ms_per_sampled_frame": 0.027258119658119657,
+      "percent_sampled_render_frame": 0.6340814189808491,
+      "percent_sampled_frame_interval": 0.6025560642878878
+    },
+    {
+      "path": "frame/scene_render/world_view/world_render/frame_graph_cpu/frame_pass/main/feature_execute_translucent/features/ModelFeatureRenderer/execute/unattributed/draw_cpu/unattributed",
+      "calls": 223,
+      "inclusive_ms": 6.1902,
+      "self_ms": 6.1902,
+      "max_call_ms": 0.0869,
+      "ms_per_sampled_frame": 0.026453846153846154,
+      "percent_sampled_render_frame": 0.6153723190416487,
+      "percent_sampled_frame_interval": 0.584777146173787
+    }
+  ],
+  "frames": [
+    {
+      "render_thread_ns": 4651500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 7322800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4387500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4415000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4524800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4551600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4610000,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4660300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4740100,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4803000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4115200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4144900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3943200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 3974400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4132500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4190900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4631300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4669000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4103600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4136200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4379100,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4410400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4151200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4186900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4629400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4676800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4112100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4159800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4501500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4581600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4606100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4646200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4438300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4477700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4192300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4234500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4351000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4382600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4340400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4371500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4528000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4569900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3975700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4006100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3940600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6384000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4197100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4228600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4050900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4092600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4029800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4059700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4797000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4837800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4487900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4528000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4261200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4293800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4688200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4728900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4591900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4632700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4346800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4387600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4768000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4800600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3821700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3855100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4540900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4582000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5347800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5393000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4944200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5010900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4593900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4667300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4033500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4064400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4427700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6944700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4238000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4268300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4630200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4732200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4486300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4526100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5368700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5408900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4071000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4145500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4125700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4157300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4646100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4686400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4181200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4228300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4150100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4180400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4122300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4155500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4530300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4572100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4575500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4607800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4110200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4139500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4019300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4053900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4478900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4518500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3997100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4031300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3944100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4030600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4516700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4562400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4113900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4145200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4056300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4120900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4446400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4475700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4076900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6574800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4154600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4180700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4075200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4102300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3964700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6803900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5410600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5447300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4221000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4286800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4472300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4500900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4433600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4460000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4109300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4142500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4525600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4557100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4511200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4538200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4197800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4226600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4668900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4701700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4568700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4596800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3889400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3916900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3755400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3790200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4230300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4256300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4143500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4169000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4703800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4755900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3872600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6393400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4104500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4128900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4092500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4116800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4075400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4099300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4354100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4381300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4709500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4773100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4001900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6419200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3948900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3973400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4118900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4146200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4050500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6731200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4331100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4357200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4131800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4157000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4413200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4439700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4034500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4059600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4248000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4275900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4978800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5018300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4141000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4171100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3946700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3974300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4376500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4409300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3996300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4021200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3866200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3919600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4766900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4802300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4631000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4662800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4288300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4318500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4380100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4410900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3941200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3969600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3863100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3929800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4390900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4420300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 6343800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6390600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4349200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4393600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4036400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4069100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4051700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4105900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4121000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4147000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3880500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3999900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3957300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6444500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4376800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4425100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4307900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4338600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4343300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4372900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3747500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3778200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4000400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4025400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4203400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4277900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3800400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3825100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4155000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6864600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3921500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3949500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4068500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4096600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4074400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4101000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3906700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3976600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4109800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4138300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3938800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3963300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3941900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3967600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4467800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4493800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4216500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4242000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4166800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4193500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4374400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4408800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4208500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4236200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4168600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4197100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4036000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4062500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3799900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3828100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4256100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4285200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4642000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4673200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4047000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4075000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4225300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4253600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4089800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4114500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4313900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4383300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3969100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3992600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5050900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 5084900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4255000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6948100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4358700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4384200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4200200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4226500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4241200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6723800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4314200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4342800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3984700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4008800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4234300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4263300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4008300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4093200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4065100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4090200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4407100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4529600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4358000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 6945300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4240800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4266100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4361100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4387000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4514300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4541200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4109900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4136000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3907400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3932400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4195800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4223100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4618500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 7400000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4303900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4329500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4723100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4753100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4691200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4719100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4126700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4176200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4311400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4336700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4588300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4615200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4512400,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4543500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4297500,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4323900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4706300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4733700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4190900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4215800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4181900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4233500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4197100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4236500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3979300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4003900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4094800,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4120000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4100000,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4125200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3926300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3950400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3904200,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3930300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3864300,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 3887800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4188700,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4237200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4125900,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4154100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4066100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4091900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4409100,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4465600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4090600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4192000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4273600,
+      "loaded_players": 9,
+      "extracted_players": 8,
+      "submitted_players": 8,
+      "interval_ns": 4318900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4524700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4552800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4149800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4175500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 7081600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 7154900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5546900,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 5579300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4398100,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4441200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4231300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4260100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3911200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 6955100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4315700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4345100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4462800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4490800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4219800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4248300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4254800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4281400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5492000,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 5530700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4354300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4380500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4187600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4214800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4171800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4236300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3729600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 3753600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4515000,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4543500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3985200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4009900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4229800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4255500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3961300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 3987800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4012000,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4101000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4075800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4101400,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4107200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4134600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4121500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4157600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4464000,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 7099700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4181700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4209300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4541800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4568900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4371300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4397700,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4010800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4036100,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3956100,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4070200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4349300,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4440500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4430900,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4458000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3891500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 3916300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4209200,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4234300,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4233600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4265900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4757700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4786800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4351500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4386200,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4242400,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4268900,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4045700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4071800,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 3921800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 6513000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 5121400,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 5157600,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4327600,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4355500,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4188700,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4220000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4852800,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4890000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4232500,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4262000,
+      "valid": true
+    },
+    {
+      "render_thread_ns": 4419100,
+      "loaded_players": 10,
+      "extracted_players": 9,
+      "submitted_players": 9,
+      "interval_ns": 4446800,
+      "valid": true
+    }
+  ],
+  "counters": {
+    "player_submissions": 1929,
+    "layer_calls/WingsLayer": 1929,
+    "feature_draw_submissions/ShadowFeatureRenderer/unattributed": 234,
+    "feature_draw_submissions/CustomFeatureRenderer/unattributed": 234,
+    "feature_draw_submissions/ModelFeatureRenderer/mixed": 958,
+    "feature_draw_submissions/NameTagFeatureRenderer/mixed": 468,
+    "name_tag_glyph_passes": 3853,
+    "layer_calls/Deadmau5EarsLayer": 1929,
+    "layer_calls/BeeStingerLayer": 1929,
+    "layer_calls/CapeLayer": 1929,
+    "layer_calls/SpinAttackEffectLayer": 1929,
+    "tagged_submits": 4566,
+    "item_preparations": 936,
+    "feature_draw_submissions/ItemFeatureRenderer/unattributed": 702,
+    "feature_draw_submissions/TextFeatureRenderer/unattributed": 234,
+    "layer_calls/ArrowLayer": 1929,
+    "layer_calls/CustomHeadLayer": 1929,
+    "model_preparations": 245,
+    "feature_draw_submissions/ItemFeatureRenderer/mixed": 702,
+    "draw_submissions/unattributed": 1861,
+    "name_tag_preparations": 3853,
+    "player_extractions": 1929,
+    "layer_calls/HumanoidArmorLayer": 1929,
+    "setup_animation_calls": 245,
+    "layer_calls/PlayerItemInHandLayer": 1929,
+    "draw_submissions/mixed": 2128,
+    "layer_calls/ParrotOnShoulderLayer": 1929,
+    "feature_draw_submissions/ModelFeatureRenderer/unattributed": 457
+  },
+  "measured_bookkeeping_ms": 21.9598,
+  "timing_node_overflow": 0,
+  "settings_start": "{\n  \"schemaVersion\": 1,\n  \"enabled\": true,\n  \"textBufferReuse\": false,\n  \"playerArmorGeometry\": true,\n  \"playerItemGeometry\": true,\n  \"playerBodyGeometry\": true,\n  \"featureBatching\": true,\n  \"featureBatchingReorder\": true,\n  \"displayModelBudget\": true,\n  \"displayModelBudgetMicros\": 500,\n  \"adaptiveDisplayModelBudget\": true,\n  \"extremeDisplayMode\": \"LIVE_CACHE\",\n  \"extremeAllItemDisplays\": true,\n  \"extremePauseDisplayTicks\": false,\n  \"modelEngineNpcBudget\": false,\n  \"npcGroupsPerFrame\": 2,\n  \"adaptiveNpcBudget\": true,\n  \"particleLightCache\": true,\n  \"particleEmptyCollision\": true,\n  \"debug\": false\n}",
+  "settings_end": "{\n  \"schemaVersion\": 1,\n  \"enabled\": true,\n  \"textBufferReuse\": false,\n  \"playerArmorGeometry\": true,\n  \"playerItemGeometry\": true,\n  \"playerBodyGeometry\": true,\n  \"featureBatching\": true,\n  \"featureBatchingReorder\": true,\n  \"displayModelBudget\": true,\n  \"displayModelBudgetMicros\": 500,\n  \"adaptiveDisplayModelBudget\": true,\n  \"extremeDisplayMode\": \"LIVE_CACHE\",\n  \"extremeAllItemDisplays\": true,\n  \"extremePauseDisplayTicks\": false,\n  \"modelEngineNpcBudget\": false,\n  \"npcGroupsPerFrame\": 2,\n  \"adaptiveNpcBudget\": true,\n  \"particleLightCache\": true,\n  \"particleEmptyCollision\": true,\n  \"debug\": false\n}",
+  "environment_start": "framebuffer\u003d1920x1129; vsync\u003dfalse; fpsLimit\u003d260; camera\u003dFIRST_PERSON; renderDistance\u003d7; fov\u003d110; resourcePacks\u003d[vanilla, file/resources.zip]",
+  "environment_end": "framebuffer\u003d1920x1129; vsync\u003dfalse; fpsLimit\u003d260; camera\u003dFIRST_PERSON; renderDistance\u003d7; fov\u003d110; resourcePacks\u003d[vanilla, file/resources.zip]",
+  "afk_policy_original": "afk",
+  "mods": {
+    "fabric-renderer-api-v1": "14.1.4+2b0d8a229e",
+    "fabric-creative-tab-api-v1": "5.0.15+6468574f9e",
+    "fabricloader": "0.20.0",
+    "fabric-transfer-api-v1": "8.0.13+11dbb7d79e",
+    "fabric-dimensions-v1": "5.1.12+515ac5339e",
+    "fabric-object-builder-api-v1": "24.1.1+6fcd5f039e",
+    "java": "25",
+    "fabric-advancement-api-v1": "1.0.0+58719a3b9e",
+    "fabric-debug-api-v1": "1.0.2+c792624d9e",
+    "fabric-game-rule-api-v1": "4.0.8+46a6d00c9e",
+    "fabric-api-base": "2.0.4+ece063239e",
+    "fabric-resource-conditions-api-v1": "6.1.0+10e9a28b9e",
+    "fabric-sound-api-v1": "2.0.5+11a26f319e",
+    "drawless": "1.4.0",
+    "fabric-model-loading-api-v1": "8.0.17+c80601bb9e",
+    "mixinextras": "0.5.5",
+    "fabric-data-attachment-api-v1": "2.2.19+515ac5339e",
+    "fabric-rendering-fluids-v1": "6.0.4+06488ac19e",
+    "fabric-lifecycle-events-v1": "4.1.4+29b6eb019e",
+    "sodium": "0.9.2+mc26.2",
+    "fabric-key-mapping-api-v1": "2.0.5+e2bdee789e",
+    "fabric-particles-v1": "5.0.19+d1756aa99e",
+    "fabric-data-generation-api-v1": "25.6.0+c0da0b829e",
+    "fabric-api-lookup-api-v1": "2.0.18+11e1c9a39e",
+    "minecraft": "26.2",
+    "fabric-command-api-v2": "3.1.0+00cb03469e",
+    "fabric-block-api-v1": "3.1.0+53515aab9e",
+    "fabric-tag-api-v1": "2.1.4+515ac5339e",
+    "fabric-block-getter-api-v2": "2.0.7+ec56b6019e",
+    "fabric-screen-api-v1": "5.2.1+5087f8249e",
+    "fabric-renderer-indigo": "9.1.4+2b0d8a229e",
+    "fabric-api": "0.161.0+26.2",
+    "fabric-convention-tags-v2": "4.7.1+1f023a9e9e",
+    "fabric-crash-report-info-v1": "1.0.5+086d547a9e",
+    "fabric-events-interaction-v0": "5.2.8+515ac5339e",
+    "fabric-item-api-v1": "14.5.0+c68f6cbe9e",
+    "fabric-recipe-api-v1": "9.0.22+11e1c9a39e",
+    "fabric-entity-events-v1": "5.0.5+06488ac19e",
+    "fabric-serialization-api-v1": "2.0.4+11a26f319e",
+    "fabric-rendering-v1": "25.3.3+515ac5339e",
+    "fabric-resource-loader-v0": "3.3.20+4fc5413f9e",
+    "fabric-resource-loader-v1": "2.0.13+9edec1269e",
+    "fabric-content-registries-v0": "11.3.2+37b1aa249e",
+    "fabric-biome-api-v1": "18.0.6+c7bd5b8e9e",
+    "fabric-loot-api-v3": "3.0.17+06488ac19e",
+    "fabric-message-api-v1": "7.0.8+bb2ed3f79e",
+    "fabric-registry-sync-v0": "7.1.1+c7bd5b8e9e",
+    "fabric-transitive-access-wideners-v1": "8.1.4+67c847259e",
+    "fabric-networking-api-v1": "6.3.4+2989c6a09e",
+    "fabric-permission-api-v1": "1.0.5+e442d8d09e",
+    "fabric-menu-api-v1": "2.0.17+086d547a9e"
+  },
+  "limits": [
+    "CPU-thread elapsed time, including possible driver waits; GPU execution time is unavailable.",
+    "One instrumented frame every 20 rendered frames. This is diagnostic sampling, not an uninstrumented FPS benchmark or a complete frametime trace.",
+    "Inclusive parents contain their children. Self time removes measured child spans only; unknown work and observer overhead remain.",
+    "Frame-interval percentages use the sum of matched start-to-next-start intervals for sampled frames; render-frame percentages use the renderFrame method\u0027s measured elapsed time.",
+    "Shared uploads cover all staged features. Mixed groups are not apportioned to players. Actual draw submissions are CPU calls, not GPU elapsed time.",
+    "Player attribution follows tagged model/item/name-tag submits. Name-tag layout and glyph emission are measured separately; shared or mixed name-tag draws are not apportioned. Other text, shadow, leash and custom bypass paths are not individually attributed.",
+    "Name-tag groups combine submit provenance with observed buffer use, including text-cache hits. Unknown-origin submits prevent a player-only classification even if they emit no glyphs.",
+    "World/GUI extraction, terrain preparation, frame-graph passes and feature phases are CPU scopes for the whole scene. Missing or bypassed hooks remain in parent self time; pass labels do not identify separate views or GPU execution.",
+    "Glint classification uses render-type naming, not shader inspection. Repeated model/state identity is an opportunity counter, not proof that mutable poses or geometry can be reused.",
+    "Deep cube/part hooks describe the vanilla ModelPart path; custom mesh/vertex formats may bypass it. Cube vertex counts are topology counts, not uploaded bytes or visible pixels.",
+    "Measured bookkeeping is a partial observer-cost indicator; clock, call-chain, JIT and allocation effects are not fully isolated or subtracted. Compare control, stages and deep under the same scene.",
+    "No player names/UUIDs are stored. Per-frame attribution maps are bounded and cleared; limits/overflows are disclosed by counters."
+  ],
+  "review_flags": []
+}
